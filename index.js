@@ -1,6 +1,11 @@
 // Imports the Google Cloud client library
 const textToSpeech = require('@google-cloud/text-to-speech');
 
+//this is second commit 
+//test commit 
+
+
+
 // Import other required libraries
 const fs = require('fs');
 const util = require('util');
@@ -8,7 +13,7 @@ const util = require('util');
 const client = new textToSpeech.TextToSpeechClient();
 async function quickStart() {
   // The text to synthesize
-  const text = ' Goodbye. Thank you for trying out the Dialeronline. You love it, right?Goodbye. Thank you for trying out the Dialeronline. You love it, right?';
+  const text = 'Goodbye. Thank you for trying out the Dialeronline. You love it, right?Goodbye. Thank you for trying out the Dialeronline. You love it, right?';
 
   // Construct the request
   const request = {
@@ -24,6 +29,6 @@ async function quickStart() {
   // Write the binary audio content to a local file
   const writeFile = util.promisify(fs.writeFile);
   await writeFile('output.wav', response.audioContent, 'binary');
-  console.log('Audio content written to file: output.mp3');
+  console.log('Audio content written to file: output.wav');
 }
 quickStart();
