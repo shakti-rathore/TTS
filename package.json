@@ -1,0 +1,14 @@
+{
+  "name": "tts",
+  "version": "1.0.0",
+  "description": "google tts ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shakti",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^3.4.0"
+  }
+}
